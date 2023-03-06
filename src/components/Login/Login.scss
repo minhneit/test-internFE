@@ -1,0 +1,99 @@
+// Form
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    @media (min-width: 768px) {
+        padding: 40px;
+    }
+}
+
+.login-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+        font-size: 3.2rem;
+    }
+}
+
+.login-label {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    &:focus {
+        outline: none;
+        border-color: #6d9eeb;
+        box-shadow: 0 0 5px rgba(109, 158, 235, 0.5);
+    }
+
+    + p {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        color: red;
+    }
+}
+
+// btn
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-button {
+    width: 100px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(109, 158, 235, 0.5);
+    }
+}
+
+.custom-input-password {
+    position: relative;
+}
+.icon {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+}
+
+.title-error {
+    font-size: 1.4rem;
+    color: red;
+    margin-top: -13px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,90 @@
+// form
+.wrapp-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    @media (min-width: 768px) {
+        padding: 40px;
+    }
+}
+
+.profile-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        font-size: 3.2rem;
+    }
+}
+
+.profile-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.profile-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    &:focus {
+        outline: none;
+        border-color: #6d9eeb;
+        box-shadow: 0 0 5px rgba(109, 158, 235, 0.5);
+    }
+
+    + p {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        color: red;
+    }
+}
+
+.title-error {
+    color: red;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+// btn
+.container-btn {
+    display: flex;
+    flex-flow: row;
+    flex-direction: row-reverse;
+    gap: 25px;
+}
+.profile-button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-button-cancel {
+    padding: 10px 20px;
+    background-color: #dcdcdc;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
