@@ -20,3 +20,7 @@ User: admin@gmail.com
 
 Password: Tien123@
 ```
+
+### After successfully logging in, the user will be directed to their profile page
+
+ Fill in the infomation in your name, date of birth, email and phone number, and the email will be updated
